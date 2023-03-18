@@ -1,5 +1,3 @@
-"use strict";
-
 const form = document.querySelector(".login-form");
 const formData = {};
 
