@@ -8,13 +8,16 @@ const ingredients = [
 ];
 
 const ingredientsRefs = document.querySelector("#ingredients");
+const ingredientsList = [];
 
 for (const ingredient of ingredients) {
   const liEl = document.createElement("li");
   liEl.textContent = ingredient;
   liEl.classList.add("item");
-  ingredientsRefs.appendChild(liEl);
+  ingredientsList.push(liEl);
 }
+
+ingredientsRefs.append(...ingredientsList);
 
 console.log(ingredientsRefs);
 
